@@ -34,11 +34,11 @@ Your grade will be based on satisfying each of these requirements.
 
 You will check out the project from github classroom, and submit it there.  The project folder should contain just the additions to the sample project that are needed to implement the project.  Do not add extra files, and do not remove the .gitignore file (we do not want the "node_modules" directory in your repository.)
 
-**Do Not Change the names** of the existing files (e.g., app.html, app.ts, etc).  The TAs need to be able to test your program as follows:
+**Do Not Change the names** of the existing files (e.g., index.html, app.ts, etc).  The TAs need to be able to test your program as follows:
 
 1. cd into the directory and run ```npm install```
 2. compile with ```tsc```
-3. start a local web server in your directory (see below) and visit ```app.html```
+3. start a local web server in your directory (see below) and visit ```index.html```
 
 Please test that your submission meets these requirements.  For example, after you check in your final version of the assignment to github, check it out again to a new directory and make sure everything builds and runs correctly.
  
@@ -73,4 +73,4 @@ npm run server
 
 Alternatively, if you install ```https-localhost``` globally (needed on Windows), you can just run ```serve``` in the project directory.
 
-You can run the sample by pointing your web browser at ```https://localhost:8080/app.html```
+You can run the sample by pointing your web browser at ```https://localhost:8080/index.html```
