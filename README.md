@@ -73,4 +73,4 @@ npm run server
 
 Alternatively, if you install ```https-localhost``` globally (needed on Windows), you can just run ```serve``` in the project directory.
 
-You can run the sample by pointing your web browser at ```https://localhost:8080/index.html```
+You can run the sample by pointing your web browser at ```https://localhost:8000/index.html```
