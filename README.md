@@ -4,6 +4,17 @@ This is a skeleton, based on ex1, of a small web drawing program in TypeScript. 
 
 ## Due: Wednesday Aug 28th, 11:59pm
 
+## Rubric
+
+Graded out of 10.
+
+1. Pointset implemented correctly: 2 (1 for handling initial elements up to buffer size, 1 for handling buffer overflow correctly)
+2. Use points in Pointset to draw fading blue rectangles: 2  (1 for drawing at least one rectangle, 1 for using all points in pointset correctly)
+3. Grey hollow rectangle renders from mouse down to current mouse position while mouse is held: 1
+4. Rectangle with random color and thick black border is added when mouse released: 1
+5. First subdivision creates a diamond inside rectangle: 2  (1 for computing mid-points correctly, 1 for drawing correctly)
+6. Recursively subdivide until size < 250: 2  (1 for drawing at least one more nested quad, 1 for recursing to the correct depth)
+
 ## Overview 
 
 The goal of this assignment is to allow you to self-assess whether you are prepared to take this class.  As such, even if you do not plan to do the assignment until after the drop deadline, you should look at it and think about it, to make sure you are comfortable with what I am asking you to do.
@@ -65,12 +76,14 @@ tsc
 ```
 You can also run ```tsc --watch``` so that ```tsc``` remains running and recompiles whenever you save a file. 
 
-The project also includes a simple https-localhost package (specified in the ```package.json```) and a command to launch a web server to serve up the files in this directory.  To use it, you must install all the required npm packages, and then run ```serve``` command in the ```package.json``` using ``npm run```
+For Mac/Linux users, the project also includes a simple https-localhost package (specified in the ```package.json```) and a command to launch a web server to serve up the files in this directory.  To use it, you must install all the required npm packages, and then run ```serve``` command in the ```package.json``` using ``npm run serve``` 
 ```
 npm install
 npm run server
 ```
 
-Alternatively, if you install ```https-localhost``` globally (needed on Windows), you can just run ```serve``` in the project directory.
+For Windows users, if you install ```https-localhost``` globally, you can run ```serve``` in the project directory.
 
 You can run the sample by pointing your web browser at ```https://localhost:8000/index.html```
+
+Alternatively, if you use Visual Studio code, you can use https://github.com/ritwickdey/vscode-live-server to get a live webserver integrated into VS Code.
